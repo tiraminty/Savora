@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/images/social-preview.png"
+    />
+    <meta property="og:title" content="Savora | Authentic Italian Dining" />
+    <meta
+      property="og:description"
+      content="Experience handcrafted Italian cuisine at Savora."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Contact Savora Restaurant, make a reservation, find our location, or get in touch with our team."
+    />
+
+    <title>Contact | Savora</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <!-- ==========================
+         Navbar
+    ========================== -->
+
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">Savora</a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+
+          <a href="#contactForm" class="btn">Reserve</a>
+
+          <button class="menu-toggle">
+            <img src="images/icons/menu.svg" alt="Open navigation menu" />
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==========================
+         Hero
+    ========================== -->
+
+    <section class="hero contact-hero">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+
+        <p>
+          We'd love to hear from you. Whether it's a reservation, a question, or
+          feedback, we're here to help.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <!-- ==========================
+     Contact Information
+========================== -->
+
+      <section class="contact-info">
+        <div class="container">
+          <div class="section-title">
+            <h2>Get In Touch</h2>
+
+            <p>
+              Whether you're planning a special dinner, making a reservation, or
+              simply have a question, we're always happy to help.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Address -->
+
+            <article class="contact-card">
+              <div class="contact-icon">
+                <img src="images/icons/map-pin.svg" alt="" class="icon" />
+              </div>
+
+              <h3>Address</h3>
+
+              <p>
+                123 Via Roma<br />
+                Florence, Italy
+              </p>
+            </article>
+
+            <!-- Phone -->
+
+            <article class="contact-card">
+              <div class="contact-icon">
+                <img src="images/icons/phone.svg" alt="" class="icon" />
+              </div>
+
+              <h3>Phone</h3>
+
+              <p>+39 123 456 7890</p>
+            </article>
+
+            <!-- Email -->
+
+            <article class="contact-card">
+              <div class="contact-icon">
+                <img src="images/icons/mail.svg" alt="" class="icon" />
+              </div>
+
+              <h3>Email</h3>
+
+              <p>hello@savora.com</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+     Contact Form
+========================== -->
+
+      <section class="contact-form-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Send Us A Message</h2>
+
+            <p>
+              Have a question or reservation request? Fill out the form below
+              and we'll get back to you as soon as possible.
+            </p>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/xbgrgbzb"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Full Name</label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full Name"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Reservation"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- ==========================
+     Location
+========================== -->
+
+      <section class="location-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Visit Us</h2>
+
+            <p>
+              Nestled in the heart of Florence, Savora is ready to welcome you
+              with authentic Italian hospitality.
+            </p>
+          </div>
+
+          <div class="location-card">
+            <img
+              src="images/location.jpg"
+              alt="Map showing the location of Savora Restaurant"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h2>Savora</h2>
+
+            <p>Every Bite Tells a Story.</p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact</h3>
+
+            <div class="footer-item">
+              <div class="footer-icon">
+                <img src="images/icons/map-pin-white.svg" alt="" />
+              </div>
+
+              <p>123 Via Roma, Florence, Italy</p>
+            </div>
+
+            <div class="footer-item">
+              <div class="footer-icon">
+                <img src="images/icons/phone-white.svg" alt="" />
+              </div>
+
+              <p>+39 123 456 7890</p>
+            </div>
+
+            <div class="footer-item">
+              <div class="footer-icon">
+                <img src="images/icons/mail-white.svg" alt="" />
+              </div>
+
+              <p>hello@savora.com</p>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/icons/facebook.svg"
+                  alt="Facebook"
+                  class="icon"
+                />
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/icons/instagram.svg"
+                  alt="Instagram"
+                  class="icon"
+                />
+              </a>
+
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/icons/twitter.svg"
+                  alt="Twitter"
+                  class="icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <em><p>&copy; 2026 Savora. All rights reserved.</p></em>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+      ↑
+    </button>
+    <script src="js/script.js"></script>
+  </body>
+</html>
