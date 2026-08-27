@@ -865,3 +865,12 @@ textarea:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 4px;
 }
+
+/* ---------- JAPANESE TOUCH ---------- */
+
+.japanese-touch {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    opacity: 0.65;
+}
